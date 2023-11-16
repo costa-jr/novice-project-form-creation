@@ -1,0 +1,194 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #efefef;
+
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: 750px;
+  margin: 140px auto;
+}
+
+body::before {
+  content: "";
+  height: 436px;
+  width: 100%;
+
+  background: #535971;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  width: 417px;
+  margin-bottom: 58px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Staatliches", sans-serif;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+header p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+#mentorship-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  border-radius: 20px 20px 0px 0px;
+  background: #fff;
+
+  padding: 64px;
+}
+
+h2,
+h3 {
+  color: #535971;
+  font-size: 1.5rem;
+  font-style: normal;
+  line-height: 34px;
+}
+
+fieldset {
+  border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+fieldset legend {
+  color: #535971;
+  font-size: 1.5rem;
+
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 16px;
+  margin-bottom: 13px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input {
+  min-height: 56px;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  padding: 16px;
+
+  background: #fafafc;
+
+  color: #78757e;
+}
+
+.input-wrapper label {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+
+  color: #4e4958;
+  font-size: 0.9rem;
+}
+
+.input-wrapper label span {
+  color: #c1bccc;
+
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+.input-wrapper label span:hover {
+  color: #78757e;
+}
+
+.name {
+  display: flex;
+  gap: 22px;
+}
+
+.name div {
+  width: 100%;
+}
+
+.fieldset-wrapper h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.availability {
+  display: flex;
+  gap: 10px;
+}
+
+.availability > div {
+  width: 50%;
+}
+
+.availability > div:nth-child(1) {
+  margin-right: 22px;
+  width: 100%;
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+
+  padding: 52px 71px;
+  /* height: 160px; */
+  border-radius: 0px 0px 20px 20px;
+  background: #535971;
+}
+
+.btn {
+  border-radius: 20px;
+  border: none;
+  background: #ff5374;
+
+  color: #fff;
+  font-family: Staatliches;
+  font-size: 1.2rem;
+  font-weight: 400;
+
+  padding: 15px 40px;
+}
+
+.btn:hover {
+  background: #be3651;
+}
+
+.input-wrapper input:invalid {
+  border: 1px solid #ff1010;
+}
